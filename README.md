@@ -17,12 +17,19 @@ We can define the parameters of our gradient boosting ensemble. We’ve set up s
 
    xgb param{
     '_eta_': 0.01, - Learning Rate can be in the range of (0.005,0.3)
+    
     '_max_depth_': 5, - Maximum depth of the decision trees being trained . Can be in the range of (3,10)
+    
     '_subsample_': 0.6,
+    
     '_colsample_bytree_': 0.7, #range 0.5 to 0.9 
+    
     '_objective_': 'reg:linear', - The loss function being used
+    
     '_eval_metric_': 'rmse',  - The evaluation metric used is Root mean sqaured error.
+    
     '_silent_': 1
+    
 
  }
  
